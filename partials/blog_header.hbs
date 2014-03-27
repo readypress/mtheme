@@ -1,0 +1,17 @@
+<header class="hero hero-home">
+  <div class="container fill-height">
+    <div class="row fill-height">
+      <div class="col-lg-4 col-lg-offset-4 fill-height title-layout">
+        <div class="align-block">
+          {{#if @blog.logo}}
+            <a class="blog-image" href="{{@blog.url}}" id="blog-image">
+              <img src="{{@blog.logo}}" alt="{{@blog.title}}">
+            </a>
+          {{/if}}
+          <h1>{{@blog.title}}</h1>
+          <p>{{@blog.description}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

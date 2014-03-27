@@ -1,0 +1,38 @@
+{{!< default}}
+
+{{! This is a page template. A page outputs content just like any other post, and has all the same
+    attributes by default, but you can also customise it to behave differently if you prefer. }}
+
+<div class="mtheme-container" id="mtheme-container">
+  <div class="surface">
+    <div class="screen-content">
+      {{#post}}
+      <article class="post-article {{post_class}} image-picker-wrap">
+        <section class="post-page-wrapper clearfix">
+          <div class="post-page-wrapper-inner clearfix">
+            <div class="post-content">
+              <div class="post-content-inner">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                      <h1 class="page-header">{{title}}</h1>
+                      {{content}} 
+                    </div>
+                  </div> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container clearfix">
+            <div class="row">
+              <div class="col-lg-8 col-lg-offset-2">
+                {{> blog_footer}}
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+      {{/post}}
+    </div>
+  </div>
+</div>

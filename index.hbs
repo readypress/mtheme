@@ -1,0 +1,38 @@
+{{!< default}}
+{{! The comment above "< default" means - insert everything in this file into the {body} of the default.hbs template, which contains our header/footer. }}
+
+<div class="mtheme-container" id="mtheme-home-container">
+  <div class="surface">
+    <div class="screen-content">
+      <div id="scrollPinOne" class="clearfix"></div>
+      <div class='image-header-wrapper'>
+        <div class="image-header">
+          <div class="image-source"></div>
+          <div class="image-source-blur"></div>
+        </div>
+      </div>
+      <div class="main foreground scrolling-region">
+        {{> blog_header}}
+        <div class="background-white">
+          <div class="container">
+            <ul class="post-list">
+              {{#foreach posts}}
+                {{> post_listitem}}
+              {{/foreach}}
+            </ul>
+            <div class="row">
+              <div class="col-lg-6 col-lg-offset-3">
+                {{pagination}}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 col-lg-offset-3">
+                {{> blog_footer}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

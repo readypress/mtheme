@@ -1,0 +1,12 @@
+<!-- post_list_item -->
+<li class="list-item clearfix">
+  <div class="col-md-6 col-md-offset-3 post-list-item">
+    <h2 class="post-item-title"><a href="{{url}}">{{{title}}}</a></h2>
+    <p>{{excerpt words="20"}}...</p>
+    <div class="post-item-meta">
+      <p>
+        <img src="{{author.image}}" alt="{{author.name}}" class="img-circle post-list-avatar"> {{author.name}} {{#if tags}}in {{{tags}}}{{/if}}
+      </p>
+    </div>
+  </div>
+</li>

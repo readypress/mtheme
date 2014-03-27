@@ -1,0 +1,83 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+<div class="mtheme-container" id="mtheme-container">
+  <div class="surface">
+    <div class="screen-content">
+      {{#post}}
+      <article class="post-article {{post_class}} image-picker-wrap">
+        <div class="post-field background-size-full picker-layout-fill">
+          <div class="story-cover">
+            <div class="story-cover-image"></div>
+            <div class="story-cover-content">
+              <div class="post-content">
+                <header class="post-header">
+                  <h1 class="post-title">{{title}}</h1>
+                  <ul class="post-item-meta">
+                    <li><img src="{{author.image}}" alt="{{author.name}}" class="img-circle story-list-avatar"></li>
+                    <li>
+                      <p>{{author.name}}</p>
+                    </li>
+                    <li>
+                      <p><p>: {{date published_at timeago="true"}}</p></p>
+                    </li>
+                  </ul>
+                </header>
+              </div>
+              <span class="story-cover-arrow" data-action="scroll-to-post-start"></span>
+            </div>
+          </div>
+        </div>
+        <div id="scrollPinOne" class="clearfix"></div>
+        <section class="post-page-wrapper clearfix">
+          <div class="post-page-wrapper-inner clearfix">
+            <div class="post-content">
+              <div class="post-content-inner">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                      {{content}} 
+                    </div>
+                  </div> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="disqus-container container">
+            <div class="row">
+              <div class="col-lg-8 col-lg-offset-2">
+                <div id="disqus_thread"></div>
+                <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+              </div>
+            </div>
+          </div>
+          <div class="container clearfix">
+            <div class="row">
+              <div class="col-lg-8 col-lg-offset-2">
+                {{> blog_footer}}
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+      {{/post}}
+    </div>
+  </div>
+</div>
+<!-- UNCOMMENT and CONFIGURE disqus_shortname to enable disqus on your posts.
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = '%YOUR_WEBSITE_SHORTNAME';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    var disqus_identifier = '{{post.id}}';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+ -->

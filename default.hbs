@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+    <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Open+Sans:300,400,600,700,900">
+    <link rel="stylesheet" href="//brick.a.ssl.fastly.net/EB+Garamond:400">
+    <link title="newtheme" rel="stylesheet" href="{{asset "dist/styles/mtheme.css"}}">
+    <script src="{{asset "dist/scripts/modernizr.custom.js"}}"></script>
+
+    {{ghost_head}} {{! Ghost outputs important style and meta data with this tag }}
+
+  </head>
+  <body class="{{body_class}}">
+    {{> site_nav}}
+    
+    {{{body}}}
+
+    {{ghost_foot}} {{! Ghost outputs important scripts and data with this tag }}
+  </body>
+  <script data-main="{{asset "dist/scripts/mtheme.min.js"}}" src="{{asset "components/requirejs/require.js"}}"></script>
+</html>

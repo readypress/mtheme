@@ -1,0 +1,16 @@
+{
+  "name": "mtheme",
+  "version": "0.1.0-beta",
+  "description": "Mediumesque theme for Ghost.",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/readypress/mtheme.git"
+  },
+  "keywords": [
+    "Ghost",
+    "Medium",
+    "Theme"
+  ],
+  "author": "Jeff Adkins for Readypress",
+  "license": "MIT"
+}
