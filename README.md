@@ -45,7 +45,7 @@ Make sure to fill in your disqus website shortname.
 
 ### Screenshot
 
-{<1>}![screenshot](https://raw.githubusercontent.com/readypress/mtheme/master/screenshot.png)
+![screenshot](https://raw.githubusercontent.com/readypress/mtheme/master/screenshot.png)
 
 
 mtheme's cover images courtesy GH Cheng (http://www.flickr.com/photos/ghcheng/) from creative commons licenced photos.
