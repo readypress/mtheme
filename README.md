@@ -14,6 +14,9 @@ Mediumesque theme for Ghost.
 ### Download
 The latest release can be downloaded from the [releases](https://github.com/readypress/mtheme/releases/) page.
 
+### Preview
+Brief example at http://ghost.readypress.com
+
 ### Quick Usage Rundown
 
 #### Initial Block
