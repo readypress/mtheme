@@ -17,7 +17,7 @@ The latest release can be downloaded from the [releases](https://github.com/read
 ### Development
 The assets in this repo are compressed and concatenated, and intended to be used as a drop-in theme.
 
-If you'd like to modify it, or use it as a jumping off point for theme development, check out the [development verion](https://github.com/readypress/mtheme-build) to get going. It includes grunt tasks for making things a little easier.
+If you'd like to modify it, or use it as a jumping off point for theme development, check out the [development version](https://github.com/readypress/mtheme-build) to get going. It includes grunt tasks for making things a little easier.
 
 ### Preview
 Brief example at http://ghost.readypress.com
